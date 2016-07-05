@@ -95,7 +95,7 @@ int main(int argc, char** argv)
                 std::vector<std::pair<unsigned long, unsigned long> > chunks;
                 std::vector<unsigned long> chunk_tags;
                 ner(tokens, chunks, chunk_tags);
-
+                cout << tokens << endl;
                 // Push an empty chunk onto the end so we can avoid complicated bounds checking in
                 // the following loop.
                 chunks.push_back(make_pair(tokens.size()+1, tokens.size()+1));
